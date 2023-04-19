@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Periodica</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3099/3099267.png" type="image/x-icon">
+</head>
+
+<body>
+    <style>
+        body{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: burlywood;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        tr {
+            display: flex;
+            width: auto;
+            
+        }
+        a{
+            text-decoration: none;
+            list-style: none;
+            color: black;
+            cursor: default;
+        }
+
+        table {
+            max-width: 175%;
+            max-height: 175%;
+            padding: 1fr;
+            margin: auto;
+            display: flex;
+        }
+
+        .hhe {
+            justify-content: space-between;
+        }
+
+        td{
+            font-family: sans-serif;
+            font-size: larger;
+            border: 5px black solid;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            transition: all 0.1s ease;
+        }
+        td:hover{
+            transform: scale(1.2);
+            cursor: default;
+        }
+        th{
+            margin-left: auto;
+        }
+        .t2{
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 3%;
+        }
+        .t1{
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .A{
+            background-color: #E9B4D9;
+        }
+        .NM{
+            background-color: #a2e661;
+        }
+        .GN{
+            background-color: #64a9e1;
+        }
+        .S{
+            background-color: #4bcabd;
+        }
+        .OM{
+            background-color: #9ec6d3;
+        }
+        .MT{
+            background-color: #F9A9AF;
+        }
+        .MAT{
+            background-color: #e7f349;
+        }
+        .MA{
+            background-color: #f4d250;
+        }
+        .L{
+            background-color: #8dd9e2;
+        }
+        .H{
+            background-color: #a1dff5;
+        }
+    </style>
+    <table>
+        <tr class="hhe">
+            <td class="NM"><a href="categorias_elementos/hidrogênio.html">H</a></td>
+            <td class="GN"><a href="categorias_elementos/hélio.html">He</a></td>
+        </tr>
+        <tr>
+            <td class="MA"><a href="/categorias_elementos/lítio.html">Li</a></td>
+            <td class="MAT"><a href="/categorias_elementos/berílio.html">Be</a></td>
+            <th>
+                <td class="S"> <a href="/categorias_elementos/boro.html">B</a></td>
+                <td class="NM"><a href="categorias_elementos/carbono.html">C</a></td>
+                <td class="NM"><a href="/categorias_elementos/nitrogênio.html">N</a></td>
+                <td class="NM"><a href="/categorias_elementos/oxigênio.html">O</a></td>
+                <td class="H"> <a href="categorias_elementos/flúor.html">F</a></td>
+                <td class="GN"><a href="/categorias_elementos/neônio.html">Ne</a></td>
+            </th>
+        </tr>
+        <tr>
+            <td class="MA"><a href="/categorias_elementos/sódio.html">Na</a></td>
+            <td class="MAT"><a href="/categorias_elementos/magnésio.html">Mg</a></td>
+            <th>
+                <td class="OM"><a href="/categorias_elementos/alumínio.html">Ai</a></td>
+                <td class="S"> <a href="/categorias_elementos/silício.html">Si</a></td>
+                <td class="NM"><a href="/categorias_elementos/fósforo.html">P</a></td>
+                <td class="NM"><a href="/categorias_elementos/enxofre.html">S</a></td>
+                <td class="H"> <a href="/categorias_elementos/cloro.html">Cl</a></td>
+                <td class="GN"><a href="/categorias_elementos/argônio.html">Ar</a></td>
+            </th>
+        </tr>
+        <tr>
+            <td class="MA"> <a href="/categorias_elementos/potássio.html">K</a></td>
+            <td class="MAT"><a href="/categorias_elementos/cálcio.html">Ca</a></td>
+            <td class="MT"> <a href="/categorias_elementos/escândio.html">Sc</a></td>
+            <td class="MT"> <a href="/categorias_elementos/titânio.html">Ti</a></td>
+            <td class="MT"> <a href="/categorias_elementos/vanádio.html">V</a></td>
+            <td class="MT"> <a href="/categorias_elementos/crômio.html">Cr</a></td>
+            <td class="MT"> <a  href="/categorias_elementos/manganês.html">Mn</a></td>
+            <td class="MT"> <a href="/categorias_elementos/ferro.html">Fe</a></td>
+            <td class="MT"> <a href="/categorias_elementos/cobalto.html">Co</a></td>
+            <td class="MT"> <a href="/categorias_elementos/níquel.html">Ni</a></td>
+            <td class="MT"> <a href="/categorias_elementos/cobre.html">Cu</a></td>
+            <td class="MT"> <a href="/categorias_elementos/zinco.html">Zn</a></td>
+            <td class="OM"> <a href="/categorias_elementos/gálio.html">Ga</a></td>
+            <td class="S">  <a href="/categorias_elementos/germânio.html">Ge</a></td>
+            <td class="S">  <a href="/categorias_elementos/arsênio.html">As</a></td>
+            <td class="NM"> <a href="/categorias_elementos/selênio.html">Se</a></td>
+            <td class="H">  <a href="/categorias_elementos/bromo.html">Br</a></td>
+            <td class="GN"> <a href="categorias_elementos/criptônio.html">Kr</a></td>
+        </tr>
+        <tr>
+            <td class="MA"> <a href="/categorias_elementos/rubídio.html">Rb</a></td>
+            <td class="MAT"><a href="/categorias_elementos/estrôncio.html">Sr</a></td>
+            <td class="MT"> <a href="/categorias_elementos/ítrio.html">Y</a></td>
+            <td class="MT"> <a href="/categorias_elementos/zircônio.html">Zr</a></td>
+            <td class="MT"> <a href="/categorias_elementos/nióbio.html">Nb</a></td>
+            <td class="MT"> <a href="/categorias_elementos/molibdênio.html">Mo</a></td>
+            <td class="MT"> <a href="/categorias_elementos/tecnécio.html">Tc</a></td>
+            <td class="MT"> <a href="/categorias_elementos/rutênio.html">Ru</a></td>
+            <td class="MT"> <a href="/categorias_elementos/ródio.html">Rh</a></td>
+            <td class="MT"> <a href="/categorias_elementos/paládio.html">Pd</a></td>
+            <td class="MT"> <a href="/categorias_elementos/prata.html">Ag</a></td>
+            <td class="MT"> <a href="/categorias_elementos/cádmio.html">Cd</a></td>
+            <td class="OM"> <a href="/categorias_elementos/índio.html">In</a></td>
+            <td class="OM"> <a href="/categorias_elementos/estanho.html">Sn</a></td>
+            <td class="S">  <a href="/categorias_elementos/antimônio.html">Sb</a></td>
+            <td class="S">  <a href="/categorias_elementos/telúrio.html">Te</a></td>
+            <td class="H">  <a href="/categorias_elementos/iodo.html">I</a></td>
+            <td class="GN"> <a href="/categorias_elementos/xenônio.html">Xe</a></td>
+        </tr>
+        <tr>
+            <td class="MA"><a href="/categorias_elementos/césio.html">Cs</a></td>
+            <td class="MAT"><a href="/categorias_elementos/bário.html">Ba</a></td>
+        <th>
+            <td class="MT"><a href="/categorias_elementos/háfnio.html">Hf</a></td>
+            <td class="MT"><a href="/categorias_elementos/tântalo.html">Ta</a></td>
+            <td class="MT"><a href="/categorias_elementos/tungstênio.html">W</a></td>
+            <td class="MT"><a href="/categorias_elementos/rênio.html">Re</a></td>
+            <td class="MT"><a href="/categorias_elementos/ósmio.html">Os</a></td>
+            <td class="MT"><a href="/categorias_elementos/Irídio.html">Ir</a></td>
+            <td class="MT"><a href="/categorias_elementos/platina.html">Pt</a></td>
+            <td class="MT"><a href="/categorias_elementos/ouro.html">Au</a></td>
+            <td class="MT"><a href="/categorias_elementos/mercúrio.html">Hg</a></td>
+            <td class="OM"><a href="/categorias_elementos/tálio.html">Tl</a></td>
+            <td class="OM"><a href="/categorias_elementos/chumbo.html">Pb</a></td>
+            <td class="OM"><a href="/categorias_elementos/bismuto.html">Bi</a></td>
+            <td class="S"><a href="/categorias_elementos/Polônio.html">Po</a></td>
+            <td class="H"><a>At</a></td>
+            <td class="GN"><a href="/categorias_elementos/radônio.html">Rn</a></td>
+        </th>
+        </tr>
+        <tr>
+            <td class="MA"><a href="/categorias_elementos/frâncio.html">Fr</a></td>
+            <td class="MAT"><a href="/categorias_elementos/rádio.html">Ra</a></td>
+            <th>
+                <td class="MT"><a href="/categorias_elementos/rutherfórdio.html">Rf</a></td>
+                <td class="MT"><a href="/categorias_elementos/dúbinio.html">Db</a></td>
+                <td class="MT"><a href="/categorias_elementos/seabórgio.html">Sg</a></td>
+                <td class="MT"><a href="/categorias_elementos/bóhrio.html">Bh</a></td>
+                <td class="MT"><a href="/categorias_elementos/hássio.html">Hs</a></td>
+                <td class="MT"><a href="/categorias_elementos/meitnério.html">Mt</a></td>
+                <td class="MT"><a href="/categorias_elementos/dasmatádtio.html">Ds</a></td>
+                <td class="MT"><a href="/categorias_elementos/roentgênio.html">Rg</a></td>
+                <td class="MT"><a href="/categorias_elementos/copernício.html">Cn</a></td>
+                <td class="OM"><a href="/categorias_elementos/nihônio.html">Nh</a></td>
+                <td class="OM"><a href="/categorias_elementos/fleróvio.html">Fl</a></td>
+                <td class="OM"><a href="/categorias_elementos/moscóvio.html">Mc</a></td>
+                <td class="OM"><a href="/categorias_elementos/livermório.html">Lv</a></td>
+                <td class="H"><a href="/categorias_elementos/tenessônio.html">Ts</a></td>
+                <td class="GN"><a href="/categorias_elementos/oganessônio.html">Og</a></td>
+            </th>
+        </tr>
+        <tr class="t2">
+            <td class="L"><a href="/categorias_elementos/lantâneo.html">La</a></td>
+            <td class="L"><a href="/categorias_elementos/cério.html">Ce</a></td>
+            <td class="L"><a href="/categorias_elementos/praseodímio.html">Pr</a></td>
+            <td class="L"><a href="/categorias_elementos/neodímio.html">Nd</a></td>
+            <td class="L"><a href="/categorias_elementos/promécio.html">Pm</a></td>
+            <td class="L"><a href="/categorias_elementos/samário.html">Sm</a></td>
+            <td class="L"><a href="/categorias_elementos/európio.html">Eu</a></td>
+            <td class="L"><a href="/categorias_elementos/gadolínio.html">Gd</a></td>
+            <td class="L"><a href="/categorias_elementos/térbio.html">Tb</a></td>
+            <td class="L"><a href="/categorias_elementos/disprósio.html">Dy</a></td>
+            <td class="L"><a href="/categorias_elementos/hólmio.html">Ho</a></td>
+            <td class="L"><a href="/categorias_elementos/érbio.html">Er</a></td>
+            <td class="L"><a href="/categorias_elementos/túlio.html">Tm</a></td>
+            <td class="L"><a href="/categorias_elementos/itérbio.html">Yb</a></td>
+            <td class="L"><a href="/categorias_elementos/lutécio.html">Lu</a></td>
+        </tr>
+        <tr class="t1">
+            <td class="A"><a href="/categorias_elementos/actínio.html">Ac</a></td>
+            <td class="A"><a href="/categorias_elementos/tório.html">Th</a></td>
+            <td class="A"><a href="/categorias_elementos/protactínio.html">Pa</a></td>
+            <td class="A"><a href="/categorias_elementos/urânio.html">U</a></td>
+            <td class="A"><a href="/categorias_elementos/netúnio.html">Np</a></td>
+            <td class="A"><a href="/categorias_elementos/plutônio.html">Pu</a></td>
+            <td class="A"><a href="/categorias_elementos/amerício.html">Am</a></td>
+            <td class="A"><a href="/categorias_elementos/cúrio.html">Cm</a></td>
+            <td class="A"><a href="/categorias_elementos/berquélio.html">Bk</a></td>
+            <td class="A"><a href="/categorias_elementos/califórnia.html">Cf</a></td>
+            <td class="A"><a href="/categorias_elementos/einstênio.html">Es</a></td>
+            <td class="A"><a href="/categorias_elementos/férmio.html">Fm</a></td>
+            <td class="A"><a href="/categorias_elementos/mendelévio.html">Md</a></td>
+            <td class="A"><a href="/categorias_elementos/nobélio.html">No</a></td>
+            <td class="A"><a href="/categorias_elementos/laurêncio.html">Lr</a></td>
+    </table>
+</body>
+</html>
